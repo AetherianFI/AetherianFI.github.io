@@ -17,10 +17,6 @@
         text-align: center;
       }
 
-      h1 {
-        margin-bottom: 0;
-      }
-
       @font-face {
         font-family: TypoRoundRegular;
         src: url(fonts/Typo_Round_Regular_Demo.otf);
@@ -30,24 +26,39 @@
         font-family: "TypoRoundRegular";
       }
 
-      #rectangle {
-        width: 475px;
+      .rectangle {
+        width: 500px;
         height: 90px;
         background-color:rgb(255, 68, 99);
-        border-radius: 40px;
-        position:absolute;
-        left: 722.5px;
+        border-radius: 45px;
+        position:relative;
         top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .main {
+        position:relative;
+        font-size: 50px;
+        text-align: center;
+        top: -56px;
+      }    
+
+      p {
+        margin-block-end: -2px;
+        margin-block-start: 0px;
       }
 
     </style>
   </head>
   <body>
 
-<div id="rectangle"></div>
+<div class="rectangle"></div>
 
-<h1 style="font-size:50px;"> Aetherian's Portfolio</h1>
-<p style="margin-top: 0;">Discord: Aetherian#6664</p>
+<div class="main">
+  <p>Aetherian's Portfolio</p>
+  <p style="font-size: 16px;">Discord: Aetherian#6664</p>
+</div>
 
   </body>
 </html>
