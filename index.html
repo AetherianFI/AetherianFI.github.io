@@ -78,10 +78,16 @@
 
     <div class="header">
       <p>Aetherian's Portfolio</p>
-      <p style="font-size: 16px; color:rgb(36, 36, 36); text-decoration: underline;">Discord: Aetherian#6664</p>
+      <p style="font-size: 16px; color:rgb(36, 36, 36); cursor: pointer; text-decoration: underline;" onclick="copy()">Discord: Aetherian#6664</p>
     </div>
 
-    <script></script> 
+    <script> /*Tämä JS-koodinpätkä kopioi discord-tunnuksen kun klikkaat siitä*/
+
+      function copy() {
+        navigator.clipboard.writeText("Aetherian#6664");
+      }
+
+    </script> 
 
     <p style="font-size: 24px;">Some overlays I have made for streaming purposes!</p>
     
