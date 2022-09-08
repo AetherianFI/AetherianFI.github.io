@@ -10,7 +10,9 @@
     <style>
 
       body {
-        background: rgb(36, 36, 36); 
+        background: rgb(25, 25, 25);
+        /*background: linear-gradient(to left, rgb(50, 50, 50), rgb(25, 25, 25));  Gradient tausta*/ 
+        background-image: url(/images/background.png);
         color: white;
         padding: 0;
         margin: 0;
@@ -29,36 +31,53 @@
       .rectangle {
         width: 500px;
         height: 90px;
-        background-color:rgb(255, 68, 99);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,68,99,1) 30%, rgba(255,68,99,1) 100%);
         border-radius: 45px;
+        border-color: white;
         position:relative;
         top: 30px;
         left: 50%;
         transform: translateX(-50%);
+        border-style: solid;
       }
 
-      .main {
-        position:relative;
+      .header {
+        position: relative;
         font-size: 50px;
         text-align: center;
         top: -56px;
       }    
-
+      
       p {
-        margin-block-end: -2px;
+        margin-block-end: 1px;
         margin-block-start: 0px;
+      }
+
+      .overlays {
+        position: relative;
+        top: 20px;
+        border-radius: 7px;
+        background-color: rgb(36, 36, 36)
       }
 
     </style>
   </head>
   <body>
 
-<div class="rectangle"></div>
+    <div class="rectangle"></div>
 
-<div class="main">
-  <p>Aetherian's Portfolio</p>
-  <p style="font-size: 16px;">Discord: Aetherian#6664</p>
-</div>
+    <div class="header">
+      <p>Aetherian's Portfolio</p>
+      <p style="font-size: 16px; color:rgb(36, 36, 36); text-decoration: underline;">Discord: Aetherian#6664</p>
+    </div>
+
+    <script></script>
+
+    <p style="font-size: 24px;">Some overlays I have made for streaming purposes!</p>
+    
+    <img src="/images/overlay1.png" alt="Pastelliväri Overlay" width="700px" class="overlays">
+
+    <img src="/images/overlay2.png" alt="Musta-vihreä Overlay" width="700px" class="overlays">
 
   </body>
 </html>
