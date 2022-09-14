@@ -16,8 +16,6 @@
         background-size: auto auto;
         background-repeat: no-repeat;
         color: white;
-        padding: 0;
-        margin: 0;
       }
 
       @font-face {
@@ -27,6 +25,8 @@
 
       * {
         font-family: "TypoRoundRegular";
+        padding: 0;
+        margin: 0;
       }
 
       .rectangle {
@@ -57,10 +57,11 @@
 
       .overlays {
         position: absolute; /* Vaihta tähän relative jos haluat, että muutkin kun fullscreen resoluutiot toimivat. Sen jälkeen top sekä muut attribuutit alla pitää korjata*/
-        top: 235px;
+        top: 230px;
         border-radius: 7px;
         background-color: rgb(36, 36, 36);
-        width: 700px;
+        height: auto;
+        width: 36.5vw;
       }
 
       .bottom {
@@ -82,21 +83,19 @@
     </div>
 
     <script> /*Tämä JS-koodinpätkä kopioi discord-tunnuksen kun klikkaat siitä*/
-
       function copy() {
         navigator.clipboard.writeText("Aetherian#6664");
       }
-
     </script> 
 
-    <p style="font-size: 24px;">Some overlays I have made for streaming purposes!</p>
+    <p style="font-size: 1.2vw;">Some overlays I have made for streaming purposes!</p>
     
     <div>
       <img src="/images/overlay1.png" alt="Pastelcolor Overlay" class="overlays" style="left: 13%">
       <img src="/images/overlay2.png" alt="Black-green Overlay" class="overlays" style="right: 13%">
     </div>
 
-    <p class="bottom">Made with Visual Studio Code | Last update 8/9/2022</p>
+    <p class="bottom">Made with Visual Studio Code | Last update 14/9/2022</p>
 
   </body>
 </html>
